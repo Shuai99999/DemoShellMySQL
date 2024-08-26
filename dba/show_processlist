@@ -1,0 +1,1 @@
+echo "select * from information_schema.processlist where user not in ('universe_op','system user','dba_find') and command <>'Sleep';"

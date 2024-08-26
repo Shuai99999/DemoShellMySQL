@@ -1,0 +1,3 @@
+read -p "username:" username
+echo "select distinct user from mysql.user where insert_priv='Y' and user='$username';"
+

@@ -1,0 +1,6 @@
+----↓critical system----
+19.236.82.100 3306 dba_admin xxxxxx xxx_master_xxx1
+----↑critical system----
+
+----XXX----
+19.236.99.1 8066 root xxxx xxx

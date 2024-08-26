@@ -1,0 +1,2 @@
+read -p "tablename:" tablename
+echo "select TABLE_SCHEMA,TABLE_NAME, concat(truncate(data_length/1024/1024,2),' MB') as data_size,concat(truncate(index_length/1024/1024,2),' MB') as index_size from information_schema.tables where table_name='$tablename';"

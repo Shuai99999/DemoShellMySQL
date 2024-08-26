@@ -1,0 +1,5 @@
+#echo "select * from information_schema.processlist where command <>'Sleep';"
+echo "select * from information_schema.processlist where command <>'Sleep' and info not like 'Master%' and time > 1;"
+#echo "select info from information_schema.processlist where user = 'dba_find';"
+#echo "select table_schema,table_name,concat(round(data_length/1024/1024/1024,2),'GB'),concat(round(data_free/1024/1024/1024,2),'GB') ,data_free/data_length from information_schema.tables where table_type='BASE TABLE' and engine ='INNODB' and data_free!=0 and data_free/data_length>0.3 and round(data_length/1024/1024/1024,2) > 0.5 order by data_free/data_length;"
+#echo "show slave status\G;"
